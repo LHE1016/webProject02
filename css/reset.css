@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* 인코딩 / css 파일에 한번만 들어가면 됨 */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,strong,sub,sup,var,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,summary,
+
+small,b,i,article,aside,canvas,details,
+figcaption,figure,footer,header, menu, 
+nav,section,time,mark,audio,video
+{margin:0; padding:0;}
+
+article,aside,details,figcaption,figure,footer,header,
+menu,nav,section,video
+{display: block;}
+
+table{border-collapse: collapse;}
+/* 셀과 셀 사이를 연결 */
+fieldset,img{border:0;}
+address,caption,cite,code,em,strong,th
+{font-style: normal; font-weight: normal;}
+/* 원래 기울어져 있는 글자 반듯하게, 굵은 글자 굵지 않게 */
+ol,ul{list-style: none;}
+caption,th{text-align: left;}
+h1,h2,h3,h4,h5,h6{font-size: 100%; font-weight: normal;}
+/* 제목도 바디에 있는 글자 사이즈와 동일하게, 굵지 않게 */
+q:before, q:after{content: "";}
+/* 앞뒤에 자동으로 생겼던 인용구(따옴표)를 없애줌 */
+abbr,acronym{border:0;}
+img,input,label,textarea,select{vertical-align: middle;}
+
+/*  display:none과 그 아래 설정값 차이: 
+    display:none은 스크린 리더기도 읽어주지 않음
+    설정값: 화면에서만 안 보여줌, 스크린 리더기는 읽어줌 */
+hr{display: none;}
+#skipNavi,.blind
+{
+position: absolute; left:0; top:0;
+width:0; height: 0;
+font-size: 0;
+line-height: 0;
+text-indent: -9999px;
+overflow: hidden;
+visibility: hidden;
+}
